@@ -8,7 +8,7 @@
     "npm": "🚨 Please use pnpm instead.",
     "yarn": "🚨 Please use pnpm instead."
   },
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@10.5.1",
   "config": {
     "vitest": "../.config/vitest.ts"
   },

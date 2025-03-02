@@ -17,7 +17,7 @@
     "npm": "🚨 Please use pnpm instead.",
     "yarn": "🚨 Please use pnpm instead."
   },
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@9.15.6",
   "scripts": {
     "clean": "rimraf node_modules src/node_modules",
     "ui": "pnpm -C src",

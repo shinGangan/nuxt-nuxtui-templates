@@ -39,6 +39,6 @@
     "npm-run-all2": "^7.0.2",
     "rimraf": "^6.0.1",
     "scaffdog": "^4.1.0",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.8"
   }
 }

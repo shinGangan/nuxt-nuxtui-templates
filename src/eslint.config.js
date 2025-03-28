@@ -1,7 +1,6 @@
 // @ts-check
 import { createConfigForNuxt } from '@nuxt/eslint-config/flat';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
-import pluginTailwindCss from 'eslint-plugin-tailwindcss';
 import pluginVueScopedCss from 'eslint-plugin-vue-scoped-css';
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 import pluginYml from 'eslint-plugin-yml';
@@ -32,7 +31,6 @@ export default createConfigForNuxt({
   })
   .append(
     { name: 'ui/for-vue' },
-    ...pluginTailwindCss.configs['flat/recommended'],
     ...pluginVueScopedCss.configs['flat/recommended'],
     ...pluginVueA11y.configs['flat/recommended'],
     ...pluginYml.configs['flat/recommended']

@@ -2,8 +2,18 @@
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
-  "cSpell.userWords": ["nuxt", "tailwindcss", "reviewdog"]
+  "cSpell.userWords": ["nuxt", "tailwindcss", "reviewdog"],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Conventional Commits 形式でコミットメッセージを英語で生成してください"
+    }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    {
+      "text": "Conventional Commits 形式でプルリクエストのタイトルを生成してください"
+    }
+  ]
 }

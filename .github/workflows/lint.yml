@@ -1,4 +1,4 @@
-name: Lint
+name: Lint using ESLint + reviewdog
 
 on:
   push:
@@ -18,29 +18,16 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 2
+    # ref: https://github.com/shinGangan/.github/blob/main/.github/workflows/linter-eslint-using-reviewdog.yml
+    uses: shinGangan/.github/.github/workflows/linter-eslint-using-reviewdog.yml@main
     permissions:
       contents: read
       pull-requests: write
     strategy:
       matrix:
         env: [src]
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
-      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
-        with:
-          node-version-file: 'package.json'
-          cache: 'pnpm'
-      - run: pnpm i --frozen-lockfile
-      - uses: reviewdog/action-setup@v1
-        with:
-          reviewdog_version: latest
-      - name: Run reviewdog with eslint
-        uses: reviewdog/action-eslint@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          filter_mode: diff_context
-          fail_level: error
-          workdir: ${{ matrix.env }}
+    with:
+      workdir: ${{ matrix.env }}
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
+      repo: ${{ github.repository }}

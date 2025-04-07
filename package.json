@@ -13,7 +13,7 @@
     "url": "git+https://github.com/shinGangan/nuxt-nuxtui-templates.git"
   },
   "engines": {
-    "node": "^22.14.0",
+    "node": "^22.14.0 || >=24.0.0",
     "npm": "🚨 Please use pnpm instead.",
     "yarn": "🚨 Please use pnpm instead."
   },

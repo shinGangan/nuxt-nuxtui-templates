@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "^22.14.0",
+    "node": "^22.14.0 || >=24.0.0",
     "npm": "🚨 Please use pnpm instead.",
     "yarn": "🚨 Please use pnpm instead."
   },
@@ -31,7 +31,7 @@
     "@nuxt/ui": "^2.21.1",
     "@nuxtjs/i18n": "^9.3.1",
     "@vue/test-utils": "^2.4.6",
-    "nuxt": "^3.15.1",
+    "nuxt": "^3.16.2",
     "vue": "^3.5.13"
   }
 }

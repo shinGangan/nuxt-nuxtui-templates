@@ -19,6 +19,8 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
+  ui: {},
+
   future: {
     compatibilityVersion: 4
   },

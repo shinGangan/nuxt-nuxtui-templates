@@ -17,8 +17,9 @@ export default createConfigForNuxt({
 })
   .override('nuxt/vue/rules', {
     rules: {
-      'vue/multi-word-component-names': 'off',
-      'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }]
+      'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }],
+      ...pluginVueScopedCss.configs['flat/recommended'].rules,
+      ...pluginVueA11y.configs['flat/recommended'][0].rules
     }
   })
   .append({

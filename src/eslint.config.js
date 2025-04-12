@@ -29,9 +29,6 @@ export default createConfigForNuxt({
     }
   })
   .append(
-    { name: 'ui/for-vue' },
-    ...pluginVueScopedCss.configs['flat/recommended'],
-    ...pluginVueA11y.configs['flat/recommended'],
-    ...pluginYml.configs['flat/recommended']
-  )
-  .append(...eslintPluginJsonc.configs['flat/recommended-with-json']);
+    ...pluginYml.configs['flat/recommended'],
+    ...eslintPluginJsonc.configs['flat/recommended-with-json']
+  );

@@ -22,12 +22,10 @@ export default createConfigForNuxt({
       ...pluginVueA11y.configs['flat/recommended'][0].rules
     }
   })
-  .append({
-    name: 'ui/for-typescript',
+  .override('nuxt/typescript/rules', {
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-      '@typescript-eslint/no-import-type-side-effects': 'error'
+      '@typescript-eslint/explicit-function-return-type': 'warn'
     }
   })
   .append(

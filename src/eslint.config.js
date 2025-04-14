@@ -25,6 +25,12 @@ export default createConfigForNuxt({
   .override('nuxt/typescript/rules', {
     rules: {
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+      '@typescript-eslint/no-empty-object-type': [
+        'error',
+        {
+          allowInterfaces: 'with-single-extends'
+        }
+      ],
       '@typescript-eslint/explicit-function-return-type': 'warn'
     }
   })

@@ -17,22 +17,22 @@ export default createConfigForNuxt({
 })
   .override('nuxt/vue/rules', {
     rules: {
-      'vue/multi-word-component-names': 'off',
-      'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }]
+      'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }],
+      ...pluginVueScopedCss.configs['flat/recommended'].rules,
+      ...pluginVueA11y.configs['flat/recommended'][0].rules
     }
   })
-  .append({
-    name: 'ui/for-typescript',
+  .override('nuxt/typescript/rules', {
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
-      '@typescript-eslint/no-import-type-side-effects': 'error'
+      '@typescript-eslint/no-empty-object-type': [
+        'error',
+        { allowInterfaces: 'with-single-extends' }
+      ],
+      '@typescript-eslint/explicit-function-return-type': 'warn'
     }
   })
   .append(
-    { name: 'ui/for-vue' },
-    ...pluginVueScopedCss.configs['flat/recommended'],
-    ...pluginVueA11y.configs['flat/recommended'],
-    ...pluginYml.configs['flat/recommended']
-  )
-  .append(...eslintPluginJsonc.configs['flat/recommended-with-json']);
+    ...pluginYml.configs['flat/recommended'],
+    ...eslintPluginJsonc.configs['flat/recommended-with-json']
+  );

@@ -19,25 +19,30 @@
   },
   "packageManager": "pnpm@10.8.1",
   "scripts": {
-    "clean": "rimraf node_modules src/node_modules",
     "ui": "pnpm -C src",
+    "clean": "run-s clean:*",
+    "clean:nuxt": "npx nuxi cleanup ./src",
+    "clean:node": "rimraf node_modules src/node_modules",
     "lint": "run-s lint:*",
     "lint:ui": "pnpm ui lint",
     "test": "run-s test:*",
     "test:ui": "pnpm ui test",
     "gen": "scaffdog generate -p .config/.scaffdog",
-    "gen:cm": "pnpm gen component"
+    "gen:cm": "pnpm gen component",
+    "gen:cmp": "npx nuxi add composable --cwd src",
+    "gen:page": "npx nuxi add page --cwd src",
+    "gen:api": "npx nuxi add api --cwd src"
   },
   "devDependencies": {
-    "@vitest/eslint-plugin": "^1.1.42",
-    "eslint": "^9.24.0",
-    "eslint-plugin-jsonc": "^2.20.0",
-    "eslint-plugin-vue-scoped-css": "^2.9.0",
-    "eslint-plugin-vuejs-accessibility": "^2.4.1",
-    "eslint-plugin-yml": "^1.17.0",
-    "npm-run-all2": "^7.0.2",
-    "rimraf": "^6.0.1",
-    "scaffdog": "^4.1.0",
-    "vitest": "^3.1.1"
+    "@vitest/eslint-plugin": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-plugin-jsonc": "catalog:dev",
+    "eslint-plugin-vue-scoped-css": "catalog:dev",
+    "eslint-plugin-vuejs-accessibility": "catalog:dev",
+    "eslint-plugin-yml": "catalog:dev",
+    "npm-run-all2": "catalog:dev",
+    "rimraf": "catalog:dev",
+    "scaffdog": "catalog:dev",
+    "vitest": "catalog:dev"
   }
 }

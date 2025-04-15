@@ -59,6 +59,9 @@ catalogs:
       specifier: ^3.5.13
       version: 3.5.13
   ui2:
+    '@iconify-json/heroicons':
+      specifier: ^1.2.2
+      version: 1.2.2
     '@iconify-json/simple-icons':
       specifier: ^1.2.32
       version: 1.2.32
@@ -104,7 +107,7 @@ importers:
   src:
     devDependencies:
       '@iconify-json/heroicons':
-        specifier: ^1.2.2
+        specifier: catalog:ui2
         version: 1.2.2
       '@iconify-json/simple-icons':
         specifier: catalog:ui2

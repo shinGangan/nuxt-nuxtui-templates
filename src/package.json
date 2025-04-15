@@ -19,9 +19,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "test": "vitest -c $npm_package_config_vitest",
-    "gen:page": "npx nuxi add page",
-    "gen:api": "npx nuxi add api"
+    "test": "vitest -c $npm_package_config_vitest"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "catalog:ui2",

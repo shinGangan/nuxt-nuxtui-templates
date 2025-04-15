@@ -19,14 +19,19 @@
   },
   "packageManager": "pnpm@10.8.1",
   "scripts": {
-    "clean": "rimraf node_modules src/node_modules",
     "ui": "pnpm -C src",
+    "clean": "run-s clean:*",
+    "clean:nuxt": "npx nuxi cleanup ./src",
+    "clean:node": "rimraf node_modules src/node_modules",
     "lint": "run-s lint:*",
     "lint:ui": "pnpm ui lint",
     "test": "run-s test:*",
     "test:ui": "pnpm ui test",
     "gen": "scaffdog generate -p .config/.scaffdog",
-    "gen:cm": "pnpm gen component"
+    "gen:cm": "pnpm gen component",
+    "gen:cmp": "npx nuxi add composable --cwd src",
+    "gen:page": "npx nuxi add page --cwd src",
+    "gen:api": "npx nuxi add api --cwd src"
   },
   "devDependencies": {
     "@vitest/eslint-plugin": "catalog:dev",

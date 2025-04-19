@@ -16,8 +16,8 @@ catalogs:
       specifier: ^3.17.2
       version: 3.17.2
     '@vitest/eslint-plugin':
-      specifier: ^1.1.42
-      version: 1.1.42
+      specifier: ^1.1.43
+      version: 1.1.43
     '@vue/test-utils':
       specifier: ^2.4.6
       version: 2.4.6
@@ -75,7 +75,7 @@ importers:
     devDependencies:
       '@vitest/eslint-plugin':
         specifier: catalog:dev
-        version: 1.1.42(@typescript-eslint/utils@8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0))
+        version: 1.1.43(@typescript-eslint/utils@8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0))
       eslint:
         specifier: catalog:dev
         version: 9.24.0(jiti@2.4.2)
@@ -1512,8 +1512,8 @@ packages:
       vite: ^5.0.0 || ^6.0.0
       vue: ^3.2.25
 
-  '@vitest/eslint-plugin@1.1.42':
-    resolution: {integrity: sha512-dTGNbh/angh+hoqp5L5A8YO/29mOXDXmDQ/1fzt/jiYzLvU6FvrMqJpGqMqh5g+Fz6MDoZi0AlxefnFUg93Q5A==}
+  '@vitest/eslint-plugin@1.1.43':
+    resolution: {integrity: sha512-OLoUMO67Yg+kr7E6SjF5+Qvl2f6uNJ7ImQYnXT8WgnPiZE41ZQBsnzn70jehXrhFVadphHs2smk+yl0TFKLV5Q==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.24.0'
       eslint: '>= 8.57.0'
@@ -1521,6 +1521,8 @@ packages:
       vitest: '*'
     peerDependenciesMeta:
       typescript:
+        optional: true
+      vitest:
         optional: true
 
   '@vitest/expect@3.1.1':
@@ -6933,13 +6935,13 @@ snapshots:
       vite: 6.2.5(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0)
       vue: 3.5.13(typescript@5.8.2)
 
-  '@vitest/eslint-plugin@1.1.42(@typescript-eslint/utils@8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0))':
+  '@vitest/eslint-plugin@1.1.43(@typescript-eslint/utils@8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0))':
     dependencies:
       '@typescript-eslint/utils': 8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.2)
       eslint: 9.24.0(jiti@2.4.2)
-      vitest: 3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0)
     optionalDependencies:
       typescript: 5.8.2
+      vitest: 3.1.1(@types/debug@4.1.12)(jiti@2.4.2)(lightningcss@1.29.2)(stylus@0.57.0)(terser@5.39.0)(yaml@2.7.0)
 
   '@vitest/expect@3.1.1':
     dependencies:

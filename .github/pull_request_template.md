@@ -6,8 +6,7 @@ closed #X.
 
 ## 📚 Description
 
-<!-- for GitHub copilot summary -->
-
+<!-- for GitHub Copilot summary -->
 ## 📷 Screen Preview
 
 ### before

@@ -27,6 +27,6 @@ closed #X.
 ![nits](https://img.shields.io/badge/review-Nits-skyblue.svg)
 ![Ask](https://img.shields.io/badge/review-Ask-blue.svg)
 -->
-<!-- for GitHub Copilot review  rule-->
+<!-- for GitHub Copilot review rule-->
 
 <!-- I want to review in Japanese. -->

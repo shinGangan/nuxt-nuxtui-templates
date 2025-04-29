@@ -15,5 +15,6 @@
     {
       "text": "Conventional Commits 形式でプルリクエストのタイトルを生成してください"
     }
-  ]
+  ],
+  "githubPullRequests.pullRequestDescription": "template"
 }

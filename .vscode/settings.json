@@ -13,8 +13,9 @@
   ],
   "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
     {
-      "text": "Conventional Commits 形式でプルリクエストのタイトルを生成してください"
+      "file": ".copilot-pull-request-description-instructions.md"
     }
   ],
-  "githubPullRequests.pullRequestDescription": "template"
+  "githubPullRequests.pullRequestDescription": "template",
+  "githubPullRequests.assignCreated": "true"
 }

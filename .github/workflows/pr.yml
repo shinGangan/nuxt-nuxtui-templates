@@ -30,7 +30,7 @@ jobs:
     with:
       number: ${{ github.event.pull_request.number }}
       title: ${{ github.event.pull_request.title }}
-      assignee: ${{ github.actor }}
+      # assignee: ${{ github.actor }}
       # NOTE: 自動化優先度が低いため手動で更新する
       milestone: 'v0.1.0'
     secrets:

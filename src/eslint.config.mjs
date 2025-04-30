@@ -26,12 +26,13 @@ export default createConfigForNuxt({
   })
   .override('nuxt/typescript/rules', {
     rules: {
-      '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+      '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
       '@typescript-eslint/no-empty-object-type': [
         'error',
         { allowInterfaces: 'with-single-extends' }
       ],
-      '@typescript-eslint/explicit-function-return-type': 'warn'
+      '@typescript-eslint/explicit-function-return-type': 'warn',
+      '@typescript-eslint/no-unused-vars': 'warn'
     }
   })
   .append(

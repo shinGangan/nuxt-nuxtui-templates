@@ -19,7 +19,7 @@ export default createConfigForNuxt({
     rules: {
       'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }],
       ...pluginVueScopedCss.configs['flat/recommended'].rules,
-      ...pluginVueA11y.configs['flat/recommended'][0].rules
+      ...pluginVueA11y.configs['flat/recommended'][0]?.rules
     }
   })
   .override('nuxt/typescript/rules', {

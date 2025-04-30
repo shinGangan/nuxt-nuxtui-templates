@@ -1,6 +1,7 @@
 // @ts-check
+import pluginVueI18n from '@intlify/eslint-plugin-vue-i18n';
 import { createConfigForNuxt } from '@nuxt/eslint-config/flat';
-import eslintPluginJsonc from 'eslint-plugin-jsonc';
+import pluginJsonc from 'eslint-plugin-jsonc';
 import pluginVueScopedCss from 'eslint-plugin-vue-scoped-css';
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility';
 import pluginYml from 'eslint-plugin-yml';
@@ -19,6 +20,7 @@ export default createConfigForNuxt({
     rules: {
       'vue/max-attributes-per-line': ['error', { singleline: { max: 3 } }],
       ...pluginVueScopedCss.configs['flat/recommended'].rules,
+      ...pluginVueI18n.configs['flat/recommended'][0].rules,
       ...pluginVueA11y.configs['flat/recommended'][0]?.rules
     }
   })
@@ -34,5 +36,5 @@ export default createConfigForNuxt({
   })
   .append(
     ...pluginYml.configs['flat/recommended'],
-    ...eslintPluginJsonc.configs['flat/recommended-with-json']
+    ...pluginJsonc.configs['flat/recommended-with-json']
   );

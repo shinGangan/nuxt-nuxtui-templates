@@ -6,7 +6,7 @@ catalogs:
     '@nuxtjs/i18n': ^9.5.4
     'vue': ^3.5.13
   ui2:
-    '@nuxt/ui': ^2.21.1
+    '@nuxt/ui': ^2.22.0
     '@iconify-json/heroicons': ^1.2.2
     '@iconify-json/simple-icons': ^1.2.33
   dev:

@@ -34,15 +34,16 @@
     "gen:api": "npx nuxi add api --cwd src"
   },
   "devDependencies": {
-    "@vitest/eslint-plugin": "catalog:dev",
-    "eslint": "catalog:dev",
-    "eslint-plugin-jsonc": "catalog:dev",
-    "eslint-plugin-vue-scoped-css": "catalog:dev",
-    "eslint-plugin-vuejs-accessibility": "catalog:dev",
-    "eslint-plugin-yml": "catalog:dev",
+    "@intlify/eslint-plugin-vue-i18n": "catalog:lint",
+    "@vitest/eslint-plugin": "catalog:test",
+    "eslint": "catalog:lint",
+    "eslint-plugin-jsonc": "catalog:lint",
+    "eslint-plugin-vue-scoped-css": "catalog:lint",
+    "eslint-plugin-vuejs-accessibility": "catalog:lint",
+    "eslint-plugin-yml": "catalog:lint",
     "npm-run-all2": "catalog:dev",
     "rimraf": "catalog:dev",
     "scaffdog": "catalog:dev",
-    "vitest": "catalog:dev"
+    "vitest": "catalog:test"
   }
 }

@@ -25,11 +25,11 @@
     "@iconify-json/heroicons": "catalog:ui2",
     "@iconify-json/simple-icons": "catalog:ui2",
     "@nuxt/devtools": "catalog:dev",
-    "@nuxt/eslint-config": "catalog:dev",
-    "@nuxt/test-utils": "catalog:dev",
+    "@nuxt/eslint-config": "catalog:lint",
+    "@nuxt/test-utils": "catalog:test",
     "@nuxt/ui": "catalog:ui2",
     "@nuxtjs/i18n": "catalog:prod",
-    "@vue/test-utils": "catalog:dev",
+    "@vue/test-utils": "catalog:test",
     "nuxt": "catalog:prod",
     "vue": "catalog:prod"
   }

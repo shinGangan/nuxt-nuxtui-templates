@@ -13,6 +13,11 @@ export default createConfigForNuxt({
       quotes: 'single',
       commaDangle: 'never',
       braceStyle: '1tbs'
+    },
+    tooling: {
+      jsdoc: true,
+      regexp: true,
+      unicorn: true
     }
   }
 })
@@ -33,6 +38,51 @@ export default createConfigForNuxt({
       ],
       '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn'
+    }
+  })
+  .override('nuxt/tooling/jsdoc', {
+    rules: {
+      'jsdoc/require-jsdoc': ['warn', {
+        publicOnly: true,
+        require: {
+          ArrowFunctionExpression: true,
+          ClassDeclaration: true,
+          ClassExpression: true,
+          FunctionDeclaration: true,
+          FunctionExpression: true,
+          MethodDefinition: true
+        },
+        contexts: [
+          'VariableDeclaration',
+          'TSInterfaceDeclaration',
+          'TSTypeAliasDeclaration',
+          'TSMethodSignature'
+        ]
+      }],
+      'jsdoc/require-description': ['warn',
+        {
+          contexts: [
+            'ArrowFunctionExpression',
+            'ClassDeclaration',
+            'ClassExpression',
+            'FunctionDeclaration',
+            'FunctionExpression',
+            'MethodDefinition',
+            'PropertyDefinition',
+            'VariableDeclaration',
+            'TSInterfaceDeclaration',
+            'TSTypeAliasDeclaration',
+            'TSPropertySignature',
+            'TSMethodSignature'
+          ]
+        }
+      ],
+      'jsdoc/require-returns': ['off'],
+      'jsdoc/check-tag-names': ['error',
+        {
+          definedTags: ['typeParam', 'remarks']
+        }
+      ]
     }
   })
   .append(

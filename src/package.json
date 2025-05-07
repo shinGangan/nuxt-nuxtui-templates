@@ -22,12 +22,12 @@
     "test": "vitest -c $npm_package_config_vitest"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "catalog:ui2",
-    "@iconify-json/simple-icons": "catalog:ui2",
+    "@iconify-json/heroicons": "catalog:ui3",
+    "@iconify-json/lucide": "catalog:ui3",
     "@nuxt/devtools": "catalog:dev",
     "@nuxt/eslint-config": "catalog:lint",
     "@nuxt/test-utils": "catalog:test",
-    "@nuxt/ui": "catalog:ui2",
+    "@nuxt/ui": "catalog:ui3",
     "@nuxtjs/i18n": "catalog:prod",
     "@vue/test-utils": "catalog:test",
     "nuxt": "catalog:prod",

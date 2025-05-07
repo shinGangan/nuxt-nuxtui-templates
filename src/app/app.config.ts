@@ -1,6 +1,16 @@
 export default defineAppConfig({
   ui: {
-    primary: 'sky',
-    gray: 'cool'
+    colors: {
+      primary: 'indigo',
+      neutral: 'slate'
+    },
+    icons: {},
+    button: {
+      defaultVariants: {
+        color: 'primary',
+        size: 'md',
+        variant: 'solid'
+      }
+    }
   }
 });

@@ -12,6 +12,8 @@ export default defineNuxtConfig({
     }
   },
 
+  $production: {},
+
   components: [
     { path: '~/components/ui', extensions: ['vue'], prefix: 'Ui' },
     { path: '~/components/feature', extensions: ['vue'], pathPrefix: false }
@@ -23,6 +25,10 @@ export default defineNuxtConfig({
 
   ui: {},
 
+  routeRules: {
+    '/': { prerender: true }
+  },
+
   future: {
     compatibilityVersion: 4
   },
@@ -30,7 +36,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-02',
 
   typescript: {
-    strict: false,
+    strict: true,
     tsConfig: {
       compilerOptions: {
         types: ['vitest/importMeta']

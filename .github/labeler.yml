@@ -10,11 +10,6 @@
           - 'docs/**/*'
           - '**/*.md'
 
-'enhancement 🚀':
-  - changed-files:
-      - any-glob-to-any-file:
-          - 'src/**/*'
-
 'testing ✅':
   - changed-files:
       - any-glob-to-any-file:

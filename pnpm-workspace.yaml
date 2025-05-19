@@ -2,7 +2,7 @@ packages:
   - 'src'
 catalogs:
   prod:
-    'nuxt': 3.16.2
+    'nuxt': 3.17.3
     '@nuxtjs/i18n': ^9.5.4
     'vue': ^3.5.14
   ui3:

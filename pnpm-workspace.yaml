@@ -11,7 +11,7 @@ catalogs:
     '@iconify-json/lucide': ^1.2.44
   dev:
     '@nuxt/devtools': ^2.4.1
-    'npm-run-all2': ^8.0.3
+    'npm-run-all2': ^8.0.4
     'rimraf': ^6.0.1
     'scaffdog': ^4.1.0
   lint:

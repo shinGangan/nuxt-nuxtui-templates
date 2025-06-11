@@ -23,7 +23,7 @@ catalogs:
     'eslint-plugin-jsonc': ^2.20.1
     'eslint-plugin-yml': ^1.18.0
   test:
-    '@vitest/eslint-plugin': ^1.2.1
+    '@vitest/eslint-plugin': ^1.2.2
     '@vue/test-utils': ^2.4.6
     '@nuxt/test-utils': ^3.19.1
     'vitest': ^3.2.3

@@ -8,7 +8,7 @@ catalogs:
   ui3:
     '@nuxt/ui': ^3.2.0
     '@iconify-json/heroicons': ^1.2.2
-    '@iconify-json/lucide': ^1.2.55
+    '@iconify-json/lucide': ^1.2.56
   dev:
     '@nuxt/devtools': ^2.6.2
     'npm-run-all2': ^8.0.4

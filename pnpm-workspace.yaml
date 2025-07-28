@@ -4,7 +4,7 @@ catalogs:
   prod:
     'nuxt': 3.16.2
     '@nuxtjs/i18n': ^9.5.6
-    'vue': ^3.5.17
+    'vue': ^3.5.18
   ui3:
     '@nuxt/ui': ^3.2.0
     '@iconify-json/heroicons': ^1.2.2

@@ -6,7 +6,7 @@ catalogs:
     '@nuxtjs/i18n': ^9.5.6
     'vue': ^3.5.18
   ui3:
-    '@nuxt/ui': ^3.2.0
+    '@nuxt/ui': ^3.3.0
     '@iconify-json/heroicons': ^1.2.2
     '@iconify-json/lucide': ^1.2.58
   dev:
@@ -16,7 +16,7 @@ catalogs:
     'scaffdog': ^4.1.0
   lint:
     'eslint': ^9.32.0
-    '@nuxt/eslint-config': ^1.6.0
+    '@nuxt/eslint-config': ^1.7.1
     'eslint-plugin-vue-scoped-css': ^2.11.0
     'eslint-plugin-vuejs-accessibility': ^2.4.1
     '@intlify/eslint-plugin-vue-i18n': ^4.0.1

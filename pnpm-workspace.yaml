@@ -19,7 +19,7 @@ catalogs:
     '@nuxt/eslint-config': ^1.7.1
     'eslint-plugin-vue-scoped-css': ^2.11.0
     'eslint-plugin-vuejs-accessibility': ^2.4.1
-    '@intlify/eslint-plugin-vue-i18n': ^4.0.1
+    '@intlify/eslint-plugin-vue-i18n': ^4.1.0
     'eslint-plugin-jsonc': ^2.20.1
     'eslint-plugin-yml': ^1.18.0
   test:

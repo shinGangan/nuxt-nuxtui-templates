@@ -15,7 +15,7 @@ catalogs:
     'rimraf': ^6.0.1
     'scaffdog': ^4.1.0
   lint:
-    'eslint': ^9.36.0
+    'eslint': ^9.37.0
     '@nuxt/eslint-config': ^1.9.0
     'eslint-plugin-vue-scoped-css': ^2.12.0
     'eslint-plugin-vuejs-accessibility': ^2.4.1

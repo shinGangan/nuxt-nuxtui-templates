@@ -10,7 +10,7 @@ catalogs:
     '@iconify-json/heroicons': ^1.2.3
     '@iconify-json/lucide': ^1.2.71
   dev:
-    '@nuxt/devtools': ^2.7.0
+    '@nuxt/devtools': ^3.0.1
     'npm-run-all2': ^8.0.4
     'rimraf': ^6.1.0
     'scaffdog': ^4.1.0

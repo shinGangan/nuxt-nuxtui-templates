@@ -12,7 +12,7 @@ catalogs:
   dev:
     '@nuxt/devtools': ^3.1.0
     'npm-run-all2': ^8.0.4
-    'rimraf': ^6.1.0
+    'rimraf': ^6.1.2
     'scaffdog': ^4.1.0
   lint:
     'eslint': ^9.39.1

@@ -21,7 +21,7 @@ catalogs:
     'eslint-plugin-vuejs-accessibility': ^2.4.1
     '@intlify/eslint-plugin-vue-i18n': ^4.1.0
     'eslint-plugin-jsonc': ^2.21.0
-    'eslint-plugin-yml': ^1.19.0
+    'eslint-plugin-yml': ^1.19.1
   test:
     '@vitest/eslint-plugin': ^1.5.4
     '@vue/test-utils': ^2.4.6

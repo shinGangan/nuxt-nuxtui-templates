@@ -38,8 +38,8 @@ catalogs:
       specifier: ^2.4.1
       version: 2.4.1
     eslint-plugin-yml:
-      specifier: ^2.0.0
-      version: 2.0.0
+      specifier: ^2.0.2
+      version: 2.0.2
   prod:
     '@nuxtjs/i18n':
       specifier: ^10.2.1
@@ -98,7 +98,7 @@ importers:
         version: 2.4.1(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-yml:
         specifier: catalog:lint
-        version: 2.0.0(eslint@9.39.2(jiti@2.6.1))
+        version: 2.0.2(eslint@9.39.2(jiti@2.6.1))
       npm-run-all2:
         specifier: catalog:dev
         version: 8.0.4
@@ -3422,15 +3422,6 @@ packages:
       sqlite3:
         optional: true
 
-  debug@4.4.1:
-    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
   debug@4.4.3:
     resolution: {integrity: sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==}
     engines: {node: '>=6.0'}
@@ -3845,8 +3836,8 @@ packages:
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
 
-  eslint-plugin-yml@2.0.0:
-    resolution: {integrity: sha512-IJ+1H2/20Vl28/5CZqbqFbzYNr0pZlBZiazcvJVVZygFn9oULVEIQOoKYlg+P2OSYKZLetr3qLR5GfQjBDV4gg==}
+  eslint-plugin-yml@2.0.2:
+    resolution: {integrity: sha512-IkHs2qV/AMw6VNY6MQXhHVc7nBQBzafBh1GOl/cNWE10+FqY3BjiN8XsWzZhsqhQs8gghMWfgSih/xiRzmMXGA==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -3937,10 +3928,6 @@ packages:
   execa@8.0.1:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
     engines: {node: '>=16.17'}
-
-  expect-type@1.2.1:
-    resolution: {integrity: sha512-/kP8CAwxzLVEeFrMm4kMmy4CCDlpipyA7MYLVrdJIkV0fYF0UaigQHRsxHiuY/GEea+bh4KSv3TIlgr+2UL6bw==}
-    engines: {node: '>=12.0.0'}
 
   expect-type@1.3.0:
     resolution: {integrity: sha512-knvyeauYhqjOYvQ66MznSMs83wmHrCycNEN6Ao+2AeYEfxUIkuiVxdEa1qlGEPK+We3n0THiDciYSsCcgW/DoA==}
@@ -10557,10 +10544,6 @@ snapshots:
 
   db0@0.3.4: {}
 
-  debug@4.4.1:
-    dependencies:
-      ms: 2.1.3
-
   debug@4.4.3:
     dependencies:
       ms: 2.1.3
@@ -11002,7 +10985,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-yml@2.0.0(eslint@9.39.2(jiti@2.6.1)):
+  eslint-plugin-yml@2.0.2(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
       '@eslint/core': 1.0.1
       '@eslint/plugin-kit': 0.5.1
@@ -11126,9 +11109,6 @@ snapshots:
       onetime: 6.0.0
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
-
-  expect-type@1.2.1:
-    optional: true
 
   expect-type@1.3.0: {}
 
@@ -14269,7 +14249,7 @@ snapshots:
       '@vitest/utils': 3.2.4
       chai: 5.2.0
       debug: 4.4.3
-      expect-type: 1.2.1
+      expect-type: 1.3.0
       magic-string: 0.30.21
       pathe: 2.0.3
       picomatch: 4.0.3

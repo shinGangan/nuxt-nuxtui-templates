@@ -68,7 +68,7 @@ catalogs:
       specifier: ^1.2.3
       version: 1.2.3
     '@iconify-json/lucide':
-      specifier: ^1.2.94
+      specifier: ^1.2.95
       version: 1.2.95
     '@nuxt/ui':
       specifier: ^4.5.0

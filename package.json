@@ -17,7 +17,7 @@
     "npm": "🚨 Please use pnpm instead.",
     "yarn": "🚨 Please use pnpm instead."
   },
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@10.32.1",
   "scripts": {
     "ui": "pnpm -C src",
     "clean": "run-s clean:*",

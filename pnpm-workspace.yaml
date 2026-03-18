@@ -26,4 +26,4 @@ catalogs:
     '@vitest/eslint-plugin': ^1.6.10
     '@vue/test-utils': ^2.4.6
     '@nuxt/test-utils': ^4.0.0
-    'vitest': ^4.0.18
+    'vitest': ^4.1.0

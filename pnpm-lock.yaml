@@ -55,7 +55,7 @@ catalogs:
       specifier: ^4.0.0
       version: 4.0.0
     '@vitest/eslint-plugin':
-      specifier: ^1.6.11
+      specifier: ^1.6.12
       version: 1.6.12
     '@vue/test-utils':
       specifier: ^2.4.6
